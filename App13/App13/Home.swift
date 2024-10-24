@@ -22,7 +22,7 @@ struct Home: View {
     var body: some View {
         
         NavigationView{
-            ZStack(alignment: .leading){
+//            ZStack(alignment: .leading){
                 VStack(spacing:10){
                     
                     ZStack {
@@ -230,17 +230,17 @@ struct Home: View {
                     
                 }
                 
-                if HomeModel.noLocation{
-                    Text("Por favor active el acceso a su ubicación en configuración para continuar !!!")
-                        .foregroundColor(.black)
-                        .frame(width: UIScreen.main.bounds.width - 100, height: 120)
-                        .cornerRadius(10)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color.black.opacity(0.3).ignoresSafeArea())
-                    
-                    
-                }
-            }
+//                if HomeModel.noLocation{
+//                    Text("Por favor active el acceso a su ubicación en configuración para continuar !!!")
+//                        .foregroundColor(.black)
+//                        .frame(width: UIScreen.main.bounds.width - 100, height: 120)
+//                        .cornerRadius(10)
+//                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+//                        .background(Color.black.opacity(0.3).ignoresSafeArea())
+//                    
+//                    
+//                }
+//            }
         }
         .navigationBarHidden(true)
         .edgesIgnoringSafeArea(.top)
